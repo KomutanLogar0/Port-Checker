@@ -14,18 +14,20 @@ if checkorfind == 1:
      port = input("What is your enemy port? ")
      try:
         s.connect((ip, port))
-        print("(✓) Port is active " + port)
+        print("(YES) Port is active " + port)
      except:
-        print("(✘) Port is deactive " + port)
+        print("(NO ) Port is deactive " + port)
 elif checkorfind == 2:
     while True:
         ip = input("What is your enemy ip?")
         for port in range(1, 9999 + 1):
             try:
                 s.connect((ip, port))
-                print("(✓) Port is active " + str(port))
+                print("(YES) Port is active " + str(port))
+                f = open("openport.txt", "x")
+                f.write(port)
             except:
-                print("(✘) Port is deactive " + str(port))
+                print("(NO) Port is deactive " + str(port))
                 
 
 

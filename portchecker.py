@@ -1,7 +1,7 @@
 import socket
 from pyfiglet import Figlet
 
-f = Figlet(font="standard")
+f = Figlet(font="slant")
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 print(f.renderText("Komutan Logar"))

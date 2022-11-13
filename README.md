@@ -1,3 +1,3 @@
-# Port-Checker
-Port Checker / Finder by KomutanLogar0
+# Pfinder
+Pfinder by KomutanLogar0
 

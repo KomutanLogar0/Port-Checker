@@ -27,7 +27,7 @@ elif checkyadafind == 2:
             try:
                 soket.connect((ip, port))
                 print("(E) Port aktif " + str(port))
-                f = open("openport.txt", "x")
+                f = open("acikport.txt", "x")
                 f.write(port)
             except:
                 print("(H) Port deaktif " + str(port))
